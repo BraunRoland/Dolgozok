@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Dolgozok"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+	<Grid>
+		<ListBox x:Name="lb_Nevek" SelectionChanged="Kiiras" HorizontalAlignment="Left" Height="367" Margin="18,15,0,0" VerticalAlignment="Top" Width="218"/>
+		<Label x:Name="lbl_kiiras" HorizontalAlignment="Left" Height="228" Margin="254,23,0,0" VerticalAlignment="Top" Width="280"/>
+		<TextBox x:Name="txtb_nev" HorizontalAlignment="Left" Margin="582,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<TextBox x:Name="txtb_email" HorizontalAlignment="Left" Margin="582,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<TextBox x:Name="txtb_telefon" HorizontalAlignment="Left" Margin="582,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<TextBox x:Name="txtb_fizetes" HorizontalAlignment="Left" Margin="582,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<ComboBox x:Name="cb_beosztasok" HorizontalAlignment="Left" Height="21" Margin="584,86,0,0" VerticalAlignment="Top" Width="117"/>
+		<RadioButton x:Name="rb_ferfi" Content="Férfi" HorizontalAlignment="Left" Margin="585,223,0,0" VerticalAlignment="Top"/>
+		<RadioButton x:Name="rb_no" Content="Nő" HorizontalAlignment="Left" Margin="585,242,0,0" VerticalAlignment="Top"/>
+		<Button x:Name="btn_mentes" Content="Mentés" HorizontalAlignment="Left" Margin="581,266,0,0" VerticalAlignment="Top" Width="116" Click="btn_mentes_Click"/>
+		<Label x:Name="lbl_nev" Content="Név:" HorizontalAlignment="Left" Margin="580,31,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_beosztas" Content="Beosztás:" HorizontalAlignment="Left" Margin="580,65,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_email" Content="Email:" HorizontalAlignment="Left" Margin="580,104,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_telefon" Content="Telefonszám:" HorizontalAlignment="Left" Margin="580,139,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_fizetes" Content="Fizetés:" HorizontalAlignment="Left" Margin="580,170,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_nem" Content="Neme:" HorizontalAlignment="Left" Margin="580,203,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="lbl_mentes" HorizontalAlignment="Left" Margin="558,297,0,0" VerticalAlignment="Top" Width="167" FontWeight="Bold" FontSize="16" Height="27"/>
+	</Grid>
 </Window>
